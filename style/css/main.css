@@ -48,7 +48,7 @@ h2, h3, h4 {
 header .upper-nav {
   background-color: #000;
   color: #fff;
-  border-top: 4px solid #0C963F;
+  border-top: 4px solid #0C8D1F;
   padding: 0.2em;
   font-size: 0.9rem;
 }
@@ -102,27 +102,29 @@ header .logo-desktop {
   z-index: 90;
   max-width: 131px;
 }
+header .logo-desktop img {
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.19);
+}
 header .menu {
   float: right;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: row;
+  /* align-items: flex-end; */
+  width: 80%;
+  justify-content: space-evenly;
 }
-header .menu div {
-  float: right;
-}
-header .menu div button {
-  background-color: #0c8d1f;
+header .menu button {
+  background-color: #0C8D1F;
   border: none;
   color: #fff;
   font-size: 0.9rem;
   padding: 0.3em 1.5em 0.3em 0.9em;
   border-radius: 0.2em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
-header .menu div button span {
+header .menu button span {
   margin-left: 0.8em;
   vertical-align: text-bottom;
 }
@@ -144,7 +146,7 @@ header .menu ul li a {
   color: #848688;
 }
 header .menu ul li a:hover {
-  color: #0c8d1f;
+  color: #0C8D1F;
   font-weight: 500;
 }
 header .menu ul li:active {
@@ -154,7 +156,8 @@ header .menu ul li:focus {
   color: #848688;
 }
 header .menu-desktop {
-  padding-top: 1.5em;
+  padding: 1.5em 0;
+  background-image: url("../../assets/images/background-header.png");
 }
 header .menu-desktop a + p {
   color: white;
@@ -188,14 +191,17 @@ header .menu-desktop a + p {
 }
 
 .paral {
-  min-height: 600px;
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.paralsec {
+.paralTorre {
   background-image: url("../../assets/images/pisa-chico.jpg");
+}
+
+.paralFood {
+  background-image: url("../../assets/images/foto-parallax.jpg");
 }
 
 .about .about-title {
@@ -204,6 +210,11 @@ header .menu-desktop a + p {
 .about .about-div img {
   display: inline-block;
   width: 60%;
+}
+
+.objective i {
+  color: #0C8D1F;
+  margin-right: 0.5em;
 }
 
 .programa {
@@ -252,15 +263,8 @@ header .menu-desktop a + p {
 }
 
 .contact {
-  background-color: #0C8D1F;
   padding-top: 2em;
   padding-bottom: 2em;
-}
-.contact p {
-  color: #fff;
-}
-.contact h2 {
-  color: #fff;
 }
 .contact .register-info {
   padding: 0.2em 2em;
@@ -356,7 +360,7 @@ footer .team {
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  .paralsec {
+  .paralTorre {
     background-image: url("../../assets/images/pisa.jpg");
   }
 
@@ -378,7 +382,7 @@ footer .team {
 }
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  .paralsec {
+  .paralTorre {
     background-image: url("../../assets/images/pisa.jpg");
   }
 
@@ -401,8 +405,9 @@ footer .team {
   }
 }
 @media (min-width: 1200px) {
-  .paralsec {
+  .paralTorre {
     background-image: url("../../assets/images/pisa.jpg");
+    background-size: auto;
   }
 
   /*HEADER*/

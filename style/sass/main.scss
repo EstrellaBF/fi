@@ -26,7 +26,9 @@ h2, h3, h4 {
 .about, .auspiciador, .programa {
   padding: 2.5em 0;
 }
-	
+
+$verde : #0C8D1F;
+$amarillo : #ffeb83;;
 //MENUS
 .enogastronomia {
 	padding-top: 1.5em;
@@ -40,8 +42,8 @@ h2, h3, h4 {
 			list-style: none;
 		}
 		.see-more {
-			background-color: #0C8D1F;
-			color: #ffeb83;
+			background-color: $verde;
+			color: $amarillo;
 			border: none;
 			font-size: 1rem;
 			padding: 0.2em 1em;
@@ -57,7 +59,7 @@ header {
 	.upper-nav {
 		background-color: #000;
 		color: #fff;
-		border-top: 4px solid #0C963F;
+		border-top: 4px solid $verde;
 		padding: 0.2em;
 		font-size: 0.9rem;
 		ul {
@@ -113,32 +115,35 @@ header {
     position: absolute;
     top: -1px;
     z-index: 90;
-    max-width: 131px;
+		max-width: 131px;
+		img {
+			
+			box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.19);
+		}
   }
 
   .menu {
     float: right;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-		align-items: flex-end;
-		div {
-			float: right;
+    flex-direction: row;
+    /* align-items: flex-end; */
+    width: 80%;
+    justify-content: space-evenly;
 			button{
-				background-color: #0c8d1f;
+				background-color: $verde;
 				border: none;
 				color: #fff;
 				font-size: 0.9rem;
 				padding: 0.3em 1.5em 0.3em 0.9em;
 				border-radius: 0.2em;
+				box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.19);
 				cursor: pointer;
 				span {
 					margin-left: 0.8em;
 					vertical-align: text-bottom;
 				}
 			}
-		}
 
 		ul {
 			list-style: none;
@@ -156,7 +161,7 @@ header {
 					color: #848688;
 				}
 				a:hover{
-					color: #0c8d1f;
+					color: $verde;
 					font-weight: 500;
 				}
 			}
@@ -171,7 +176,8 @@ header {
   }
 
   .menu-desktop {
-		padding-top: 1.5em;
+    padding: 1.5em 0;
+		background-image: url("../../assets/images/background-header.png");
 		 a + p {
 			color: white;
 			font-size: 0.9rem;
@@ -211,17 +217,20 @@ header {
   
 //PARALLAX
 .paral {
-  min-height: 600px;
+  //min-height: 600px;
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
 }
   
-.paralsec {
+.paralTorre {
   background-image: url("../../assets/images/pisa-chico.jpg");
 }
-	
-	
+
+	  
+.paralFood {
+  background-image: url("../../assets/images/foto-parallax.jpg");
+}
 //SOBRE LA FERIA
 .about {
 	.about-title {
@@ -235,6 +244,13 @@ header {
 	}	
 }
 
+//OBJETIVOS
+.objective {
+	i {
+		color: $verde;
+		margin-right: 0.5em;
+	}
+}
 
 //PROGRAMA
 .programa {
@@ -289,15 +305,9 @@ header {
 
 //CONTACTO
 .contact {
-	background-color: #0C8D1F;
+	//background-color: $verde;
   padding-top: 2em;
   padding-bottom: 2em;
-	p {
-		color: #fff;
-	}
-	h2 {
-		color: #fff;
-	}
   .register-info {
 		padding: 0.2em 2em;
 		p {
@@ -307,7 +317,7 @@ header {
 				}				
 		}
 		input {
-			background-color: #0C8D1F;
+			background-color: $verde;
 			border: none;
 			border-bottom: 2px solid #fff;
 			color:#fff;
@@ -412,7 +422,7 @@ footer {
   
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-  .paralsec {
+  .paralTorre {
     background-image: url("../../assets/images/pisa.jpg");
   }
 
@@ -451,7 +461,7 @@ footer {
   
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  .paralsec {
+  .paralTorre {
     background-image: url("../../assets/images/pisa.jpg");
   }
 
@@ -489,8 +499,9 @@ footer {
   
   
 @media (min-width: 1200px) {
-  .paralsec {
-    background-image: url("../../assets/images/pisa.jpg");
+  .paralTorre {
+		background-image: url("../../assets/images/pisa.jpg");
+		background-size: auto;
   }
   /*HEADER*/
   .carousel-item {

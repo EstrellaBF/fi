@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-	
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	 crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -74,20 +74,6 @@
 						<a class="nav-link" href="#">Croquis</a>
 					</li>
 					<!-- -->
-
-					<li class="nav-item">
-						<!--<li class="nav-item active">-->
-						<a class="nav-link" data-toggle="modal" data-target="#enogastronomia">Enogastronomía</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Cultura y Arte</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Innovación</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Turismo</a>
-					</li>
 				</ul>
 			</div>
 		</nav>
@@ -106,35 +92,16 @@
 						<p id="countdown-desktop"></p>
 					</div>
 
-					<div class="col-12">
+					<div class="col-10 offset-2 ">
 						<div class="menu">
-							<div>
-								<button>
-									<i class="fas fa-store"></i>
-									<span>Reserva un Stand</span>
-								</button>
-								<button>
-									<i class="fas fa-ticket-alt"></i>
-									<span>Compra entradas</span>
-								</button>
-							</div>
-							<ul>
-								<li class="nav-item">
-									<a data-toggle="modal" data-target="#enogastronomia">Enogastronomía</a>
-								</li>
-								<li>|</li>
-								<li class="nav-item">
-									<a href="#foodLink">Cultura y Arte</a>
-								</li>
-								<li>|</li>
-								<li class="nav-item">
-									<a href="#foodLink">Innovación</a>
-								</li>
-								<li>|</li>
-								<li class="nav-item">
-									<a href="#foodLink">Turismo</a>
-								</li>
-							</ul>
+							<button>
+								<i class="fas fa-store"></i>
+								<span>Reserva un Stand</span>
+							</button>
+							<button>
+								<i class="fas fa-ticket-alt"></i>
+								<span>Compra entradas</span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -283,7 +250,7 @@
 		</div>
 	</main>
 	<!--Sobre la Feria-->
-	<section class="about paral paralsec" id="parallax">
+	<section class="about paral paralTorre" id="parallax">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 about-title text-center wow animated bounceInDown">
@@ -292,45 +259,156 @@
 						ITALIA 2018.
 					</p>
 				</div>
+			</div>
+		</div>
+	</section>
+	<div class="separador"></div>
+	<!--Objetivos-->
+	<section class="objective paral paralTorre" id="parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-8 offset-2  wow animated bounceInDown">
+					<h2 class="text-center">Objetivos</h2>
+					<div class="text-left">
+						<p>
+							<i class="fas fa-check-circle"></i>Presentación de innovación tecnológica italiana orientada al desarrollo del Perú.</p>
+						<p>
+							<i class="fas fa-check-circle"></i>Dar a conocer el sector de energías renovables y la preservación del Medio Ambiente.</p>
+						<p>
+							<i class="fas fa-check-circle"></i>La cultura gastronómica italiana.</p>
+						<p>
+							<i class="fas fa-check-circle"></i>Promover la tradición italiana(cultura, moda, industria textil, etc).</p>
+						<p>
+							<i class="fas fa-check-circle"></i>Facilitar las relaciones entre empresas y asociaciones en el Perú.</p>
+						<p>
+							<i class="fas fa-check-circle"></i>Promover el turismo en la península italiana.</p>
+						<p>
+							<i class="fas fa-check-circle"></i>Alimentar el interés en el aprendizaje del idioma italiano gracias a la presencia de universidades, escuelas e
+							institos.</p>
+						<p>
+							<i class="fas fa-check-circle"></i>Poder dar a conocer el trabajo de las ONG italianas presentes en el territorio peruano por más de 30 años.</p>
+					</div>
 
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Enogastronomia-->
+	<section class="objective paral paralFood" id="parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-8 offset-2  wow animated bounceInDown">
+					<h2 class="text-center">Enogastronomía</h2>
+				</div>
 				<div class="col-12">
-					<div class="text-center about-div">
-						<h2>¿Porqué participar?</h2>
+					<div class="text-center stands-list">
+						<img class="img-fluid" alt="" src="assets/images/vinos-1.png">
+						<h4>Vinos</h4>
+						<ul id="wine-list">
+							<li>Emp. Vino 1</li>
+							<li>Emp. Vino 2</li>
+							<li>Emp. Vino 3 </li>
+							<div class="collapse" id="whine-list-toggle">
+								<li>Emp. Vino 1</li>
+								<li>Emp. Vino 2</li>
+								<li>Emp. Vino 3 </li>
+							</div>
+						</ul>
+						<button class="see-more" type="button" data-toggle="collapse" data-target="#whine-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+							<i class="fas fa-caret-down"></i>
+						</button>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
-					<div class="text-center about-div wow animated zoomInDown ">
-						<img class="img-fluid" alt="" src="assets/images/brindando-vino.png">
-						<p>Diviértete </p>
+				<div class="col-12">
+					<div class="text-center stands-list">
+						<img class="img-fluid" alt="" src="assets/images/italian-food-2.png">
+						<h4>Gastronomía</h4>
+						<ul id="food-list">
+							<li>Emp. Gastronomía1</li>
+							<li>Emp. Gastronomía2</li>
+							<li>Emp. Gastronomía3</li>
+							<div class="collapse" id="food-list-toggle">
+								<li>Emp. Gastronomía1</li>
+								<li>Emp. Gastronomía2</li>
+								<li>Emp. Gastronomía3</li>
+							</div>
+						</ul>
+						<button class="see-more" type="button" data-toggle="collapse" data-target="#food-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+							<i class="fas fa-caret-down"></i>
+						</button>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
-					<div class="text-center about-div wow animated zoomInDown ">
-						<img class="img-fluid" alt="" src="assets/images/famila-italiana.png">
-						<p>Pasa un momento en familia</p>
+				<div class="col-12">
+					<div class="text-center stands-list">
+						<img class="img-fluid" alt="" src="assets/images/tiramisu-chico.png">
+						<h4>Postres</h4>
+						<ul id="desserts-list">
+							<li>Emp. Postre1</li>
+							<li>Emp. Postre2</li>
+							<li>Emp. Postre3</li>
+							<div class="collapse" id="desserts-list-toggle">
+								<li>Emp. Postre3</li>
+								<li>Emp. Postre2</li>
+								<li>Emp. Postre3</li>
+							</div>
+						</ul>
+						<button class="see-more" type="button" data-toggle="collapse" data-target="#desserts-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+							<i class="fas fa-caret-down"></i>
+						</button>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3">
-					<div class="text-center about-div wow animated zoomInDown ">
-						<img class="img-fluid" alt="" src="assets/images/feria_de_negocios.png">
-						<p>Aumenta la visibilidad de tu negocio</p>
+				<div class="col-12">
+					<div class="text-center stands-list">
+						<img class="img-fluid" alt="" src="assets/images/limoncello.png">
+						<h4>Bebidas</h4>
+						<ul id="beverage-list">
+							<li>Em. Bebida 1</li>
+							<li>Em. Bebida 2</li>
+							<li>Em. Bebida 3</li>
+							<div class="collapse" id="beverage-list-toggle">
+								<li>Em. Bebida 1</li>
+								<li>Em. Bebida 2</li>
+								<li>Em. Bebida 3</li>
+							</div>
+						</ul>
+						<button class="see-more" type="button" data-toggle="collapse" data-target="#beverage-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
+							<i class="fas fa-caret-down"></i>
+						</button>
 					</div>
 				</div>
-				<div class="col-12 col-sm-6 col-md-3 wow animated zoomInDown ">
-					<div class="text-center about-div">
-						<img class="img-fluid" alt="" src="assets/images/cash-register.png">
-						<p>Aumenta tus ingresos</p>
-					</div>
-				</div>
+			</div>
+		</div>
+	</section>
 
+	<!--Eventos durante la feria-->
+	<section class="events ">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="text-center calendar">
+						<h2>Eventos durante la Feria</h2>
+					</div>
+				</div>
+				<div class="col-8 offset-2">
+					<div class="text-left evento-div">
+						<p>Desfile de los deportivos del Circolo Sportivo Italiano (parte delantera de la Casa Prado).</p>
+						<p>Conferencia sobre MATERA 2019.</p>
+						<p>Conferencia sobre la fusión de la cocina peruana e italiana.</p>						
+						<p>Conterencia de la empresa FRISOLI sobre su trabajo de recuperación ambiental de los depósitos de desechos.</p>
+						<p>Conferencia de la Universidad Di Bari e UCSS de Lima, sobre el intercambio cultural entre los estudiantes de los dos países.</p>						
+						<p>Show de cocina Italiana por parte de uno de los restaurantes italianos de Lima.</p>
+						<p>Conferencia sobre la influencia del arte italiano en Perú, a cargo de profesores de Historia del Arte de la UPC.</p>			
+						<p>Conferencia y video sobre el trabajo de las ONG italianas en Perú.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<div class="separador"></div>
 
-
 	<!--Programa-->
-	<section class="programa paral paralsec">
+	<section class="programa paral paralTorre">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-12 col-lg-6">
@@ -348,21 +426,39 @@
 					</div>
 				</div>
 				<!--
-				<div class="col-12 col-sm-12 col-md-12 col-lg-4">
-					<div class="text-center croquis">
-						<h3>Croquis</h3>
-						<div class="text-center" id="map"></div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+						<div class="text-center croquis">
+							<h3>Croquis</h3>
+							<div class="text-center" id="map"></div>
+						</div>
 					</div>
-				</div>
-				-->
+					-->
 			</div>
 		</div>
 	</section>
-	<div class="separador"></div>
 
 	<!--AUSPICIADOR-->
 	<section class="auspiciador">
 		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h2>Con la colaboración de :</h2>
+					<div class="supports-icons" id="supports-icons">
+							<a target="_blank">
+								<p>Ministerio de Relaciones Exteriores del Perú</p>							
+							</a>
+							<a target="_blank">
+								<p>Región Basilicata, con la designación de la ciudad de Matera como capital europea de la cutura 2019</p>	
+							</a>
+							<a target="_blank">
+								<p>Fondazione Architetti della Provincia di Potenza</p>	
+							</a>
+							<a target="_blank">
+								<p>Región Apulia</p>	
+							</a>
+						</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-12">
 					<div class="text-center auspiciadores wow animated bounceInDown">
@@ -407,53 +503,41 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="text-center register-div">
-						<h2>Regístrate</h2>
-					</div>
+					<h2 class="text-center">Contáctanos</h2>
 				</div>
+			</div>
+			<div class="row">
 				<div class="col-12">
-					<div class="text-rigth register-info">
-						<p>
-							<i class="fas fa-check"></i>En la cámara de comercio de Lima</p>
+					<div class="piazza-italia">
+						<h3>Piazza Italia :</h3>
+						<div>
+							<p>Emanuela Pelligro</p>
+							<p>Antonio Chuquipiondo</p>
+							<p>Claudio Crovetto</p>
+						</div>
+						<div>
+							<p>piazzaitalialima@gmail.com</p>
+							<p>(511) 757 2004</p>
+						</div>
 					</div>
 				</div>
+			</div>
+			<div class="row">
 				<div class="col-12">
-					<div class="text-rigth register-info">
-						<p>
-							<i class="fas fa-check"></i>Suscríbete con tu correo:</p>
-						<input type="text" placeholder="Escribe tu correo">
-					</div>
+					<div class="cam-comercio">
+						<h3>Cámara de Comercio de Lima :</h3>
+						<div>
+							<p><span>Eva Gómez</span> Subgerente de Marketing</p>
+							<p><span>Jacqueline Ibarra</span> Coordinadora ejecutiva de ferias</p>
+							<p><span>Eva Gómez</span> Claudio Crovetto</p>
+						</div>
+						<div>
+							<p>jibarra@camaralima.org.pe</p>
+							<p>(511) 219 1807</p>
+						</div>
+					</div>					
 				</div>
-				<div class="col-12">
-					<div class="text-center contactanos-div">
-						<h2>Contáctanos</h2>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="contact-info">
-						<i class="text-left fas fa-envelope-open"></i>
-						<span>piazzaitalialima@gmail.com</span>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="contact-info">
-						<i class="text-left fas fa-mobile-alt"></i>
-						<span>939 387622</span>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="contact-info">
-						<i class="text-left fas fa-users"></i>
-						<span>Equipo</span>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="arrow wow animated bounce">
-						<a class="" href="#top">
-							<i class="fas fa-angle-up"></i>
-						</a>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</section>
@@ -484,7 +568,7 @@
 	 crossorigin="anonymous"></script>
 	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKBRMz3C6COgaTDm-EuUh0Tk8-vCNNCXI&callback=initMap" async
 	 defer></script>-->
-	
+
 	<script src="js/app.js"></script>
 	<script>
 	/*
