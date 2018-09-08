@@ -16,6 +16,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Bilbo+Swash+Caps" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="style/css/animate.css">
 	<link rel="stylesheet" href="style/css/main.css">
 
@@ -49,7 +50,7 @@
 			</button>
 
 			<div class="mobile-main-button">
-				<button>
+				<button data-toggle="modal" data-target="#reserva-stand">
 					<span>Reserva un Stand</span>
 				</button>
 				<button>
@@ -94,7 +95,7 @@
 
 					<div class="col-10 offset-2 ">
 						<div class="menu">
-							<button>
+							<button data-toggle="modal" data-target="#reserva-stand">
 								<i class="fas fa-store"></i>
 								<span>Reserva un Stand</span>
 							</button>
@@ -111,7 +112,7 @@
 	</header>
 
 	<!-- Modal -->
-	<div class="modal fade" id="enogastronomia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="reserva-stand" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-body">
@@ -124,91 +125,13 @@
 							<div class="row">
 								<div class="col-12">
 									<div class="text-center">
-										<h2>Enogastronomía</h2>
-										<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-									<div class="text-center stands-list">
-										<img class="img-fluid" alt="" src="assets/images/vinos-1.png">
-										<h4>Vinos</h4>
-										<ul id="wine-list">
-											<li>Emp. Vino 1</li>
-											<li>Emp. Vino 2</li>
-											<li>Emp. Vino 3 </li>
-											<div class="collapse" id="whine-list-toggle">
-												<li>Emp. Vino 1</li>
-												<li>Emp. Vino 2</li>
-												<li>Emp. Vino 3 </li>
-											</div>
-										</ul>
-										<button class="see-more" type="button" data-toggle="collapse" data-target="#whine-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-											<i class="fas fa-caret-down"></i>
-										</button>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-									<div class="text-center stands-list">
-										<img class="img-fluid" alt="" src="assets/images/italian-food-2.png">
-										<h4>Gastronomía</h4>
-										<ul id="food-list">
-											<li>Emp. Gastronomía1</li>
-											<li>Emp. Gastronomía2</li>
-											<li>Emp. Gastronomía3</li>
-											<div class="collapse" id="food-list-toggle">
-												<li>Emp. Gastronomía1</li>
-												<li>Emp. Gastronomía2</li>
-												<li>Emp. Gastronomía3</li>
-											</div>
-										</ul>
-										<button class="see-more" type="button" data-toggle="collapse" data-target="#food-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-											<i class="fas fa-caret-down"></i>
-										</button>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-									<div class="text-center stands-list">
-										<img class="img-fluid" alt="" src="assets/images/tiramisu-chico.png">
-										<h4>Postres</h4>
-										<ul id="desserts-list">
-											<li>Emp. Postre1</li>
-											<li>Emp. Postre2</li>
-											<li>Emp. Postre3</li>
-											<div class="collapse" id="desserts-list-toggle">
-												<li>Emp. Postre3</li>
-												<li>Emp. Postre2</li>
-												<li>Emp. Postre3</li>
-											</div>
-										</ul>
-										<button class="see-more" type="button" data-toggle="collapse" data-target="#desserts-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-											<i class="fas fa-caret-down"></i>
-										</button>
-									</div>
-								</div>
-								<div class="col-12 col-sm-6 col-md-6 col-lg-3">
-									<div class="text-center stands-list">
-										<img class="img-fluid" alt="" src="assets/images/limoncello.png">
-										<h4>Bebidas</h4>
-										<ul id="beverage-list">
-											<li>Em. Bebida 1</li>
-											<li>Em. Bebida 2</li>
-											<li>Em. Bebida 3</li>
-											<div class="collapse" id="beverage-list-toggle">
-												<li>Em. Bebida 1</li>
-												<li>Em. Bebida 2</li>
-												<li>Em. Bebida 3</li>
-											</div>
-										</ul>
-										<button class="see-more" type="button" data-toggle="collapse" data-target="#beverage-list-toggle" aria-expanded="false" aria-controls="collapseExample">Ver más
-											<i class="fas fa-caret-down"></i>
-										</button>
+										<h2>Separa tu Stand</h2>
+										<img class="img-fluid" alt="" src="assets/images/mape.png">
 									</div>
 								</div>
 							</div>
 						</div>
 					</section>
-
-
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
@@ -253,7 +176,7 @@
 	<section class="about paral paralTorre" id="parallax">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 about-title text-center wow animated bounceInDown">
+				<div class="col-8 offset-2 about-title text-center wow animated bounceInDown">
 					<h1>Feria Piazza Italia</h1>
 					<p>La cámara de comercio de Lima - CCL y la Associazione Piazza Italiana organizan por 1era vez en el Perú la FERIA PIAZZA
 						ITALIA 2018.
@@ -295,10 +218,10 @@
 	</section>
 
 	<!--Enogastronomia-->
-	<section class="objective paral paralFood" id="parallax">
+	<section class="enogastronomia paral paralFood wow animated bounceInDown" id="parallax">
 		<div class="container">
 			<div class="row">
-				<div class="col-8 offset-2  wow animated bounceInDown">
+				<div class="col-8 offset-2 ">
 					<h2 class="text-center">Enogastronomía</h2>
 				</div>
 				<div class="col-12">
@@ -382,11 +305,11 @@
 	</section>
 
 	<!--Eventos durante la feria-->
-	<section class="events ">
+	<section class="events wow animated bounceInLeft">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="text-center calendar">
+					<div class="text-center">
 						<h2>Eventos durante la Feria</h2>
 					</div>
 				</div>
@@ -441,7 +364,7 @@
 	<section class="auspiciador">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 text-center">
+				<div class="col-12 text-center  wow animated bounceInLeft">
 					<h2>Con la colaboración de :</h2>
 					<div class="supports-icons" id="supports-icons">
 							<a target="_blank">
@@ -511,13 +434,13 @@
 					<div class="piazza-italia">
 						<h3>Piazza Italia :</h3>
 						<div>
-							<p>Emanuela Pelligro</p>
-							<p>Antonio Chuquipiondo</p>
-							<p>Claudio Crovetto</p>
+							<p><span><i class="fas fa-user-circle"></i></span> Emanuela Pelligro</p>
+							<p><span><i class="fas fa-user-circle"></i></span> Antonio Chuquipiondo</p>
+							<p><span><i class="fas fa-user-circle"></i></span> Claudio Crovetto</p>
 						</div>
 						<div>
-							<p>piazzaitalialima@gmail.com</p>
-							<p>(511) 757 2004</p>
+							<p><span><i class="fas fa-envelope"></i></span> piazzaitalialima@gmail.com</p>
+							<p><span><i class="fas fa-phone"></i></span> (511) 757 2004</p>
 						</div>
 					</div>
 				</div>
@@ -527,13 +450,12 @@
 					<div class="cam-comercio">
 						<h3>Cámara de Comercio de Lima :</h3>
 						<div>
-							<p><span>Eva Gómez</span> Subgerente de Marketing</p>
-							<p><span>Jacqueline Ibarra</span> Coordinadora ejecutiva de ferias</p>
-							<p><span>Eva Gómez</span> Claudio Crovetto</p>
+							<p><span><i class="fas fa-user-circle"></i></span> Eva Gómez <span>Subgerente de Marketing</span></p>
+							<p><span><i class="fas fa-user-circle"></i></span> Jacqueline Ibarra <span>Coordinadora ejecutiva de ferias</span></p>
 						</div>
 						<div>
-							<p>jibarra@camaralima.org.pe</p>
-							<p>(511) 219 1807</p>
+							<p><span><i class="fas fa-envelope"></i></span> jibarra@camaralima.org.pe</p>
+							<p><span><i class="fas fa-phone"></i></span> (511) 219 1807</p>
 						</div>
 					</div>					
 				</div>

@@ -12,7 +12,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
   font-family: "Lucida Bright";
   font-style: italic;
   font-weight: 400;
@@ -24,6 +24,10 @@ h2, h3, h4 {
 
 .enogastronomia {
   padding-top: 1.5em;
+}
+.enogastronomia li {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.2rem;
 }
 .enogastronomia .stands-list {
   margin-bottom: 3em;
@@ -67,14 +71,18 @@ header nav {
   background-color: #fff;
 }
 header .mobile-menu {
+  background-image: url("../../assets/images/background-header.png");
   padding-top: 1.2em;
   padding-bottom: 1.2em;
+}
+header .mobile-menu button {
+  background-color: #fff;
 }
 header .mobile-menu .mobile-main-button {
   display: inline;
 }
 header .mobile-menu .mobile-main-button button {
-  background-color: #fff;
+  background-color: #0C8D1F;
   border: none;
   border-radius: 0.2em;
   color: #5f5f5f;
@@ -84,10 +92,13 @@ header .mobile-menu .mobile-main-button button {
   font-weight: 500;
   margin-right: 0.3em;
   margin-top: 0.5em;
-  padding: 0 0.4em;
+  padding: 0.2em 1em;
   -webkit-box-shadow: 6px 5px 10px -7px rgba(47, 44, 44, 0.65);
   -moz-box-shadow: 6px 5px 10px -7px rgba(47, 44, 44, 0.65);
   box-shadow: 6px 5px 10px -7px rgba(47, 44, 44, 0.65);
+}
+header .mobile-menu .mobile-main-button button span {
+  color: #fff;
 }
 header .logo {
   display: inline-block;
@@ -204,6 +215,10 @@ header .menu-desktop a + p {
   background-image: url("../../assets/images/foto-parallax.jpg");
 }
 
+.about p {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.2rem;
+}
 .about .about-title {
   margin-bottom: 2.5em;
 }
@@ -212,6 +227,10 @@ header .menu-desktop a + p {
   width: 60%;
 }
 
+.objective p {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.2rem;
+}
 .objective i {
   color: #0C8D1F;
   margin-right: 0.5em;
@@ -246,8 +265,17 @@ header .menu-desktop a + p {
   width: 260px;
 }
 
+.events p {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
 .auspiciador {
   background-color: #f7f7f7;
+}
+.auspiciador p {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.2rem;
 }
 .auspiciador .auspiciadores {
   margin-top: 2.5em;
