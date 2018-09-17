@@ -9,8 +9,15 @@
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	 crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	<!--
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
+	-->
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
 	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i,900" rel="stylesheet">
@@ -19,6 +26,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="style/css/animate.css">
 	<link rel="stylesheet" href="style/css/main.css">
+	
+	<!-- yenny para el contáctanos -->
+	
+	<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<!--  -->
+	
 
 	<!--js-->
 	<script src="js/wow.min.js"></script>
@@ -28,18 +43,10 @@
 	<header id="top">
 		<div class="upper-nav">
 			<ul>
-				<li>
-					Suscríbete
-				</li>
-				<li>
-					Contáctanos
-				</li>
-				<li>
-					Promociones
-				</li>
-				<li>
-					<i class="fab fa-facebook-f"></i>
-				</li>
+				<li>Suscríbete</li>
+				<li>Contáctanos</li>
+				<li>Promociones </li>
+				<li> <i class="fab fa-facebook-f"></i> </li>
 			</ul>
 		</div>
 		<!--Mobile, showing sm -->
@@ -89,16 +96,11 @@
 							<!-- yenny cambiando logo-->
 							<img class="img-fluid" src="assets/images/logo-1.png" alt="">
 						</a>
-
-						<p id="countdown-desktop"></p>
 					</div>
 
 					<div class="col-10 offset-2 ">
 						<div class="menu">
-							<button data-toggle="modal" data-target="#reserva-stand">
-								<i class="fas fa-store"></i>
-								<span>Reserva un Stand</span>
-							</button>
+							<button data-toggle="modal" data-target="#reserva-stand"><em class="fas fa-store"></em> <span>Reserva un Stand</span></button>
 							<button>
 								<i class="fas fa-ticket-alt"></i>
 								<span>Compra entradas</span>
@@ -110,7 +112,372 @@
 		</nav>
 		<!--desktop end -->
 	</header>
+	
+	
+	<!-- Yenny Modal presentacion-->
+	
+	<div class="modal fade" id="objetivos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
 
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - Los Objetivos -</h2>
+									<img class="img-fluid" alt="" src="assets/images/objetivos-1.svg">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<div class="modal fade" id="evento-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - ... y disfruta de gratos momentos! -</h2>
+									<img class="img-fluid" alt="" src="assets/images/evento-2-2.svg">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<!-- Yenny Modal Conoce los eventos-->
+	
+	<div class="modal fade" id="evento-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - Ven, participa de... -</h2>
+									<img class="img-fluid" alt="" src="assets/images/evento-1-1.svg">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<div class="modal fade" id="evento-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - ...y disfruta de gratos momentos! -</h2>
+									<img class="img-fluid" alt="" src="assets/images/evento-2-2.svg">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<!-- Yenny conoce distribucion-->
+	
+	<div class="modal fade" id="muestras" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - Exhibición de Muestras Fotográficas -</h2>
+									<img class="img-fluid" alt="" src="assets/images/muestras.png">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<div class="modal fade" id="stands" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - Exhibición de Empresas y Ventas -</h2>
+									<img class="img-fluid" alt="" src="assets/images/stands.png">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="dia-2-popup-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - Día 2 -</h2>
+									<img class="img-fluid" alt="" src="assets/images/dia-2-popup-1.svg">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="dia-3-popup-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - Día 3 -</h2>
+									<img class="img-fluid" alt="" src="assets/images/dia-3-popup-1.svg">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<!-- Yenny Modal Conoce nuestro programa-->
+	
+	<div class="modal fade" id="dias-3-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - 3 Días -</h2>
+									<img class="img-fluid" alt="" src="assets/images/boletin-2.svg">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<div class="modal fade" id="dia-1-popup-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - Día 1 -</h2>
+									<img class="img-fluid" alt="" src="assets/images/dia-1-popup-1.svg">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="dia-2-popup-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - Día 2 -</h2>
+									<img class="img-fluid" alt="" src="assets/images/dia-2-popup-1.svg">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="dia-3-popup-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<section id="foodLink" class="enogastronomia">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="text-center">
+										<h2> - Día 3 -</h2>
+									<img class="img-fluid" alt="" src="assets/images/dia-3-popup-1.svg">
+									</div>
+								</div>
+							</div>   
+						</div>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Ok!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	
+	
+	
+	
 	<!-- Modal -->
 	<div class="modal fade" id="reserva-stand" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -126,10 +493,10 @@
 								<div class="col-12">
 									<div class="text-center">
 										<h2>Separa tu Stand</h2>
-										<img class="img-fluid" alt="" src="assets/images/mape.png">
+									<img class="img-fluid" alt="" src="assets/images/mape.png">
 									</div>
 								</div>
-							</div>
+							</div>   
 						</div>
 					</section>
 				</div>
@@ -173,7 +540,7 @@
 		</div>
 	</main>
 	<!--Sobre la Feria-->
-	<section class="about paral paralTorre" id="parallax">
+	<section class="about paral -paralTorre" id="parallax">
 		<div class="container">
 			<div class="row">
 				<div class="col-8 offset-2 about-title text-center wow animated bounceInDown">
@@ -186,45 +553,159 @@
 		</div>
 	</section>
 	<div class="separador"></div>
-	<!--Objetivos-->
-	<section class="objective paral paralTorre" id="parallax">
-		<div class="container">
-			<div class="row">
-				<div class="col-8 offset-2  wow animated bounceInDown">
-					<h2 class="text-center">Objetivos</h2>
-					<div class="text-left">
-						<p>
-							<i class="fas fa-check-circle"></i>Presentación de innovación tecnológica italiana orientada al desarrollo del Perú.</p>
-						<p>
-							<i class="fas fa-check-circle"></i>Dar a conocer el sector de energías renovables y la preservación del Medio Ambiente.</p>
-						<p>
-							<i class="fas fa-check-circle"></i>La cultura gastronómica italiana.</p>
-						<p>
-							<i class="fas fa-check-circle"></i>Promover la tradición italiana(cultura, moda, industria textil, etc).</p>
-						<p>
-							<i class="fas fa-check-circle"></i>Facilitar las relaciones entre empresas y asociaciones en el Perú.</p>
-						<p>
-							<i class="fas fa-check-circle"></i>Promover el turismo en la península italiana.</p>
-						<p>
-							<i class="fas fa-check-circle"></i>Alimentar el interés en el aprendizaje del idioma italiano gracias a la presencia de universidades, escuelas e
-							institos.</p>
-						<p>
-							<i class="fas fa-check-circle"></i>Poder dar a conocer el trabajo de las ONG italianas presentes en el territorio peruano por más de 30 años.</p>
-					</div>
 
+	
+	<!-- Presentación Yenny-->
+	
+	<!--Presentación-->
+	<section class="enogastronomia paral -paralFood wow animated bounceInDown" id="parallax">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="text-center stands-list">
+						<img class="img-fluid" alt="" src="assets/images/1-Fechas.png">
+						<p id="countdown-desktop"></p>
+						<ul id="wine-list">
+							<li></li>					
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="text-center stands-list">
+						<img class="img-fluid" alt="" src="assets/images/casa-prado-noche.png">
+						<h4>Casa Prado</h4>
+						<p>Av. 28 de Julio - Miraflores</p>
+						
+						<ul id="food-list">
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="text-center stands-list">
+						<img data-toggle="modal" data-target="#objetivos" class="img-fluid" alt="" src="assets/images/objetivos.svg">
+						
+						<h4>Nuestro objetivo</h4>
+						<ul id="desserts-list">
+							<li></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<!--Enogastronomia-->
-	<section class="enogastronomia paral paralFood wow animated bounceInDown" id="parallax">
+	
+	
+	<!-- -->
+	
+	<!--Conoce nuestro Programa-->
+	<!-- inicia Yenny-->
+	<section class="programa -paral -paralTorre">
 		<div class="container">
 			<div class="row">
 				<div class="col-8 offset-2 ">
-					<h2 class="text-center">Enogastronomía</h2>
+					<h2 class="text-center">Conoce nuestro programa</h2>
 				</div>
-				<div class="col-12">
+				
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3">
+					<div class="text-center stands-list">
+						<h5></h5>
+						<img data-toggle="modal" data-target="#dias-3-popup" class="img-fluid" alt="" src="assets/images/boletin-1.svg">
+						<h4> 23-24 y 25 Nov </h4>			
+						
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3">
+					<div class="text-center stands-list">
+						<h5> </h5>
+						<div class="-fecha-div">
+							<img data-toggle="modal" data-target="#dia-1-popup-1" class="img-fluid" alt="" src="assets/images/dia-1.svg">							
+							<h4> Día 1</h4>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3">
+					<div class="text-center stands-list">
+						<img data-toggle="modal" data-target="#dia-2-popup-1" class="img-fluid" alt="" src="assets/images/dia-2.svg">						
+						<h4> Día 2</h4>
+					</div>
+				</div>
+				
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3">
+					<div class="text-center stands-list">
+						<img data-toggle="modal" data-target="#dia-3-popup-1" class="img-fluid" alt="" src="assets/images/dia-3.svg">	
+						<h4> Día 3 </h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- termina Yenny-->
+	
+	<!--Yenny  sección Conoce la distribución-->
+	<section class="enogastronomia paral -paralFood wow animated bounceInDown" id="parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-8 offset-2 ">
+					<h2 class="text-center">Así será la distribución de lugar</h2>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="text-center stands-list">
+						<img data-toggle="modal" data-target="#stands" class="img-fluid" alt="" src="assets/images/piso-1.png">
+						<h4></h4>
+						<ul id="wine-list">
+							<li> <h4>Exhibición de Empresas y Ventas</h4></li>	
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="text-center stands-list">
+						<img data-toggle="modal" data-target="#muestras" class="img-fluid" alt="" src="assets/images/piso-2.svg">
+						<h4></h4>
+						<ul id="food-list">
+							<li><h4>Exhibición de Muestras Fotográficas</h4></li>
+						</ul>
+					</div>
+				</div>						
+			</div>
+		</div>
+	</section>
+
+<!--Yenny  sección Conoce los eventos-->
+	<section class="enogastronomia paral -paralFood wow animated bounceInDown" id="parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-8 offset-2 ">
+					<h2 class="text-center">Entérate de los eventos</h2>
+				</div>
+							
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="text-center stands-list">
+						<img data-toggle="modal" data-target="#evento-1" class="img-fluid" alt="" src="assets/images/evento-1.png">
+						<h4>Ven, participa de...</h4>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="text-center stands-list">
+						<img data-toggle="modal" data-target="#evento-2" class="img-fluid" alt="" src="assets/images/evento-2.png">							
+						<h4>... y disfruta de gratos momentos!</h4>
+					</div>
+				</div>						
+			</div>
+		</div>
+	</section>	
+	
+	<!--Enogastronomia-->
+	<section class="enogastronomia paral -paralFood wow animated bounceInDown" id="parallax">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 -offset-2 ">
+					<h2 class="text-center">Deléitate con la Enogastronomía Italiana</h2>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3">
 					<div class="text-center stands-list">
 						<img class="img-fluid" alt="" src="assets/images/vinos-1.png">
 						<h4>Vinos</h4>
@@ -243,7 +724,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="col-12">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3">
 					<div class="text-center stands-list">
 						<img class="img-fluid" alt="" src="assets/images/italian-food-2.png">
 						<h4>Gastronomía</h4>
@@ -262,7 +743,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="col-12">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3">
 					<div class="text-center stands-list">
 						<img class="img-fluid" alt="" src="assets/images/tiramisu-chico.png">
 						<h4>Postres</h4>
@@ -281,7 +762,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="col-12">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3">
 					<div class="text-center stands-list">
 						<img class="img-fluid" alt="" src="assets/images/limoncello.png">
 						<h4>Bebidas</h4>
@@ -304,80 +785,62 @@
 		</div>
 	</section>
 
-	<!--Eventos durante la feria-->
-	<section class="events wow animated bounceInLeft">
+	<!--Yenny  conoce las demas categorias-->
+	<section class="enogastronomia paral -paralFood wow animated bounceInDown" id="parallax">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<div class="text-center">
-						<h2>Eventos durante la Feria</h2>
+				<div class="col-8 offset-2 ">
+					<h2 class="text-center">Visítanos, Conoce y Conéctate con...</h2>
+				</div>
+							
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3">
+					<div class="text-center stands-list">
+						<img data-toggle="modal" data-target="#evento-1" class="img-fluid" alt="" src="assets/images/universidades.png">
+						<h4>Universidades</h4>
 					</div>
 				</div>
-				<div class="col-8 offset-2">
-					<div class="text-left evento-div">
-						<p>Desfile de los deportivos del Circolo Sportivo Italiano (parte delantera de la Casa Prado).</p>
-						<p>Conferencia sobre MATERA 2019.</p>
-						<p>Conferencia sobre la fusión de la cocina peruana e italiana.</p>						
-						<p>Conterencia de la empresa FRISOLI sobre su trabajo de recuperación ambiental de los depósitos de desechos.</p>
-						<p>Conferencia de la Universidad Di Bari e UCSS de Lima, sobre el intercambio cultural entre los estudiantes de los dos países.</p>						
-						<p>Show de cocina Italiana por parte de uno de los restaurantes italianos de Lima.</p>
-						<p>Conferencia sobre la influencia del arte italiano en Perú, a cargo de profesores de Historia del Arte de la UPC.</p>			
-						<p>Conferencia y video sobre el trabajo de las ONG italianas en Perú.</p>
+				<div class="col-12 col-sm-12 col-md-3 col-lg-63">
+					<div class="text-center stands-list">
+						<img data-toggle="modal" data-target="#evento-2" class="img-fluid" alt="" src="assets/images/innovacion.png">							
+						<h4>Innovación</h4>
 					</div>
-				</div>
+				</div>						
+				<div class="col-12 col-sm-12 col-md-3 col-lg-63">
+					<div class="text-center stands-list">
+						<img data-toggle="modal" data-target="#evento-2" class="img-fluid" alt="" src="assets/images/Design.png">							
+						<h4>Design</h4>
+					</div>
+				</div>	
+			
+				<div class="col-12 col-sm-12 col-md-3 col-lg-63">
+					<div class="text-center stands-list">
+						<img data-toggle="modal" data-target="#evento-2" class="img-fluid" alt="" src="assets/images/turismo.png">							
+						<h4>Turismo</h4>
+					</div>
+				</div>	
+				
 			</div>
 		</div>
-	</section>
-	<div class="separador"></div>
-
-	<!--Programa-->
-	<section class="programa paral paralTorre">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-sm-12 col-md-12 col-lg-6">
-					<div class="text-center calendar">
-						<h3>Fecha</h3>
-						<div class="fecha-div">
-							<img class="img-fluid" alt="" src="assets/images/1-Fechas.png">
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-sm-12 col-md-12 col-lg-6">
-					<div class="text-center evento-div">
-						<h3>Evento</h3>
-						<img class="img-fluid" alt="" src="assets/images/casa-prado-noche.png">
-					</div>
-				</div>
-				<!--
-					<div class="col-12 col-sm-12 col-md-12 col-lg-4">
-						<div class="text-center croquis">
-							<h3>Croquis</h3>
-							<div class="text-center" id="map"></div>
-						</div>
-					</div>
-					-->
-			</div>
-		</div>
-	</section>
+	</section>	
 
 	<!--AUSPICIADOR-->
 	<section class="auspiciador">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 text-center  wow animated bounceInLeft">
+				<div class="col-8 offset-2 text-center  wow animated bounceInLeft">
 					<h2>Con la colaboración de :</h2>
 					<div class="supports-icons" id="supports-icons">
 							<a target="_blank">
-								<p>Ministerio de Relaciones Exteriores del Perú</p>							
+								<p><i class="fas fa-check-circle"></i> Ministerio de Relaciones Exteriores del Perú</p>							
 							</a>
 							<a target="_blank">
-								<p>Región Basilicata, con la designación de la ciudad de Matera como capital europea de la cutura 2019</p>	
+								<p><i class="fas fa-check-circle"></i> Región Basilicata, con la designación de la ciudad de Matera como capital europea de la cutura 2019</p>	
 							</a>
 							<a target="_blank">
-								<p>Fondazione Architetti della Provincia di Potenza</p>	
+								<p><i class="fas fa-check-circle"></i> Fondazione Architetti della Provincia di Potenza</p>	
 							</a>
 							<a target="_blank">
-								<p>Región Apulia</p>	
+								<p><i class="fas fa-check-circle"></i> Región Apulia</p>	
 							</a>
 						</div>
 				</div>
@@ -420,50 +883,44 @@
 			</div>
 		</div>
 	</section>
-
-	<!--Contáctanos-->
-	<section class="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h2 class="text-center">Contáctanos</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<div class="piazza-italia">
-						<h3>Piazza Italia :</h3>
-						<div>
-							<p><span><i class="fas fa-user-circle"></i></span> Emanuela Pelligro</p>
-							<p><span><i class="fas fa-user-circle"></i></span> Antonio Chuquipiondo</p>
-							<p><span><i class="fas fa-user-circle"></i></span> Claudio Crovetto</p>
-						</div>
-						<div>
-							<p><span><i class="fas fa-envelope"></i></span> piazzaitalialima@gmail.com</p>
-							<p><span><i class="fas fa-phone"></i></span> (511) 757 2004</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<div class="cam-comercio">
-						<h3>Cámara de Comercio de Lima :</h3>
-						<div>
-							<p><span><i class="fas fa-user-circle"></i></span> Eva Gómez <span>Subgerente de Marketing</span></p>
-							<p><span><i class="fas fa-user-circle"></i></span> Jacqueline Ibarra <span>Coordinadora ejecutiva de ferias</span></p>
-						</div>
-						<div>
-							<p><span><i class="fas fa-envelope"></i></span> jibarra@camaralima.org.pe</p>
-							<p><span><i class="fas fa-phone"></i></span> (511) 219 1807</p>
-						</div>
-					</div>					
-				</div>
-
+	
+	<!-- Contáctanos yenny ddd -->
+	<section class="container">
+		
+		<div class="row">
+			<div class="col-12">
+				<h2 class="text-center">Contáctanos</h2>
 			</div>
 		</div>
+		
+		<div class="row">					
+			<div class="col-6 col-sm-12 col-md-6 col-lg-6">
+				<h4 class="text-center">Llámanos Directamente a:</h4>
+				<div class="piazza-italia">
+					<h6 class="text-center">Piazza Italia :</h6>
+				<div>
+				<p><span><i class="fas fa-user-circle"></i></span> Emanuela Pelligro</p>
+				<p><span><i class="fas fa-user-circle"></i></span> Antonio Chuquipiondo</p>
+				<p><span><i class="fas fa-user-circle"></i></span> Claudio Crovetto</p>
+				<div>
+					<p><span><i class="fas fa-envelope"></i></span> piazzaitalialima@gmail.com</p>
+					<p><span><i class="fas fa-phone"></i></span> (511) 757 2004</p>
+				</div>
+				<div class="cam-comercio">
+					<h6 class="text-center">Cámara de Comercio de Lima :</h6>
+					<div>
+						<p><span><i class="fas fa-user-circle"></i></span> Eva Gómez <span>Subgerente de Marketing</span></p>
+						<p><span><i class="fas fa-user-circle"></i></span> Jacqueline Ibarra <span>Coordinadora ejecutiva de ferias</span></p>
+					</div>
+					<div>
+						<p><span><i class="fas fa-envelope"></i></span> jibarra@camaralima.org.pe</p>
+						<p><span><i class="fas fa-phone"></i></span> (511) 219 1807</p>
+					</div>
+				</div>				
+			</div>
+		
+		</div>
 	</section>
-
 
 	<!--Footer-->
 	<footer id="footer">
@@ -490,6 +947,12 @@
 	 crossorigin="anonymous"></script>
 	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKBRMz3C6COgaTDm-EuUh0Tk8-vCNNCXI&callback=initMap" async
 	 defer></script>-->
+	
+	<!-- yenny -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <!--  -->
+	
 
 	<script src="js/app.js"></script>
 	<script>

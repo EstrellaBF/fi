@@ -13,9 +13,15 @@
 }
 
 h1, h2, h3, h4 {
-  font-family: "Lucida Bright";
-  font-style: italic;
   font-weight: 400;
+}
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 .about, .auspiciador, .programa {
@@ -195,11 +201,6 @@ header .menu-desktop a + p {
   /* opacity: 5; */
   background-color: #50505066;
 }
-.carousel-item .carousel-caption h3 {
-  font-family: "Lucida Bright";
-  font-style: italic;
-  font-weight: 400;
-}
 
 .paral {
   background-attachment: fixed;
@@ -236,9 +237,6 @@ header .menu-desktop a + p {
   margin-right: 0.5em;
 }
 
-.programa {
-  background-color: #f7f7f7;
-}
 .programa .fecha-div h4 {
   margin: 0;
 }
@@ -276,6 +274,9 @@ header .menu-desktop a + p {
 .auspiciador p {
   font-family: "Quattrocento Sans", sans-serif;
   font-size: 1.2rem;
+}
+.auspiciador .supports-icons a {
+  text-align: left;
 }
 .auspiciador .auspiciadores {
   margin-top: 2.5em;

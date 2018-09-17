@@ -15,7 +15,7 @@ var sponsorsIcons = document.getElementById("sponsors-icons");
 var sponsorsDiv = document.getElementById("sponsors-div");
 
 
-$('.carousel').carousel()
+//$('.carousel').carousel();
 
 window.onscroll = function () {
   //var scroll = window.scrollTop();

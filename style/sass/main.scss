@@ -18,9 +18,17 @@
   
   
 h1, h2, h3, h4 {
-  font-family: 'Lucida Bright';
-  font-style: italic;
+  //font-family: 'Lucida Bright';
+  //font-style: italic;
   font-weight: 400;
+}
+
+h2 {
+	padding-bottom: 2rem;
+}
+
+h4 {
+	font-size: 1rem;
 }
   
 .about, .auspiciador, .programa {
@@ -218,11 +226,6 @@ header {
     width: 100%;
     /* opacity: 5; */
 		background-color: #50505066;
-		h3 {
-			font-family: 'Lucida Bright';
-			font-style: italic;
-			font-weight: 400;
-		}
   }
 }
   
@@ -273,7 +276,6 @@ header {
 
 //PROGRAMA
 .programa {
-	background-color: #f7f7f7;
   .fecha-div {
 		h4{
 			margin: 0;
@@ -317,6 +319,11 @@ header {
 	p {
 		font-family: 'Quattrocento Sans', sans-serif;
 		font-size: 1.2rem;
+	}
+	.supports-icons {
+		a {
+			text-align: left;
+		}
 	}
 	.auspiciadores {
 		margin-top: 2.5em;
